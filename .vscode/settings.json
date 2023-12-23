@@ -15,10 +15,12 @@
         "Construtor",
         "devkit",
         "Idade",
+        "inicialização",
         "Linha",
         "Método",
         "métodos",
         "modelo",
+        "objeto",
         "pelas",
         "requisições",
         "Responsável",
@@ -27,6 +29,7 @@
         "serviço",
         "todos",
         "Variável",
+        "vetor",
         "visibilidade"
     ]
 }

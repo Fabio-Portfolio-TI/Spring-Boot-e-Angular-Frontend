@@ -9,7 +9,7 @@
     <input type="button" value="Cadastrar" *ngIf="btnCadastro" class="btn btn-primary">
     <input type="button" value="Alterar"   *ngIf="!btnCadastro" class="btn btn-warning">
     <input type="button" value="Remover"   *ngIf="!btnCadastro" class="btn btn-danger">
-    <input type="button" value="Cancelar"  *ngIf="!btnCadastro" class="btn btn-secondary">
+    <input type="button" value="Cancelar"  *ngIf="!btnCadastro"  class="btn btn-secondary">
 
 </form>
 
@@ -25,5 +25,14 @@
         </tr>
     </thead>
 
-    <tbody></tbody>
+    <tbody>
+        <!-- c => vetor de linha do objeto clientes -->
+        <tr *ngFor="let c of clientes; index as i"> <!-- Linha --> 
+            <td>{{i+1}}</td> <!-- Coluna --> 
+            <td>{{c.nome}}</td>
+            <td>{{c.idade}}</td>
+            <td>{{c.cidade}}</td>
+            <td><button class="btn btn-success">Selecionar</button></td>
+        </tr>
+    </tbody>
 </table>
